@@ -2,3 +2,5 @@
 --verbose
 --listen
 --loader autogptq
+--model iai_WizardLM-30B-Uncensored-GPTQ
+

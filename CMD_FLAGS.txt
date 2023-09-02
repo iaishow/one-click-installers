@@ -3,4 +3,4 @@
 --listen
 --loader autogptq
 --model TheBloke_WizardLM-30B-Uncensored-GPTQ
-
+--disable_exllama

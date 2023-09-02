@@ -114,7 +114,7 @@ def install_dependencies():
             run_cmd("conda install -y -k ninja git && python -m pip install torch torchvision torchaudio", assert_success=True, environment=True)
 
     # Clone webui to our computer
-    run_cmd("git clone https://github.com/oobabooga/text-generation-webui.git", assert_success=True, environment=True)
+    run_cmd("git clone https://github.com/iaishow/text-generation-webui.git", assert_success=True, environment=True)
 
     # Install the webui dependencies
     update_dependencies(initial_installation=True)

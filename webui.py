@@ -245,7 +245,7 @@ if __name__ == "__main__":
         #### if len([item for item in glob.glob('text-generation-webui/models/*') if not item.endswith(('.txt', '.yaml'))]) == 0:
         ####     print_big_message("WARNING: You haven't downloaded any model yet.\nOnce the web UI launches, head over to the \"Model\" tab and download one.")
         if len([item for item in glob.glob('text-generation-webui/models/*') if not item.endswith(('.txt', '.yaml'))]) == 0:
-            download_model('TheBloke_WizardLM-30B-Uncensored-GPTQ')
+            run_cmd("python text-generation-webui/download-model.py TheBloke/WizardLM-30B-Uncensored-GPTQ", environment=True)
 
         # Workaround for llama-cpp-python loading paths in CUDA env vars even if they do not exist
         conda_path_bin = os.path.join(conda_env_path, "bin")

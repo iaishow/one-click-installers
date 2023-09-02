@@ -80,14 +80,15 @@ def clear_cache():
 
 def install_dependencies():
     # Select your GPU or, choose to run in CPU mode
-    print("What is your GPU")
-    print()
-    print("A) NVIDIA")
-    print("B) AMD (Linux/MacOS only. Requires ROCm SDK 5.4.2/5.4.3 on Linux)")
-    print("C) Apple M Series")
-    print("D) None (I want to run models in CPU mode)")
-    print()
-    gpuchoice = input("Input> ").lower()
+    ### print("What is your GPU")
+    ### print()
+    ### print("A) NVIDIA")
+    ### print("B) AMD (Linux/MacOS only. Requires ROCm SDK 5.4.2/5.4.3 on Linux)")
+    ### print("C) Apple M Series")
+    ### print("D) None (I want to run models in CPU mode)")
+    ### print()
+    ### gpuchoice = input("Input> ").lower()
+    gpuchoice = 'a'
     while gpuchoice not in ['a', 'b', 'c', 'd']:
         print("Invalid choice. Please try again.")
         gpuchoice = input("Input> ").lower()
